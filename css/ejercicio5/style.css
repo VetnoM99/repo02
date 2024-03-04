@@ -10,7 +10,9 @@ h1:hover {
 p {
   column-count: 3;
   column-gap: 90px;
- 
+ /* column-rule-width: 3px;
+  column-rule-color: red;
+  column-rule-style: groove;gi*/
   column-rule: 2px red solid;
 }
 p::selection {
