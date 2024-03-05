@@ -1,0 +1,12 @@
+div
+{
+    background-color: orangered;
+    outline: 10px green dotted ;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+div:hover
+{
+    outline: 7px black dotted;
+}
