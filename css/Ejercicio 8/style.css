@@ -3,22 +3,26 @@
     background-color:  white;
     margin-left: auto;
     margin-right: auto;
-    height: 20px;
-    width: 200px;
+    margin-bottom: 20px;
+    height: 50%;
+    width: 50%;
+    
     background-color:aliceblue;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
     border: 2px solid;
-
+    min-width: 200px;
 }
 body{
     margin-top: 100px;
     background-color: antiquewhite;
 }
 p{
+    margin-top: 2px;
    margin-left:8px;
    margin-right: 8px;
+   margin-bottom: 10px;
 }
