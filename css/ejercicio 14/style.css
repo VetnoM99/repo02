@@ -1,0 +1,37 @@
+body{
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+.a
+{
+    background: red;
+    height: 60px;
+}
+.b
+{
+    background: blue;
+    height: 30px;
+}
+
+.c
+ {
+    float: left;
+    width: 48%;
+    height: 560px;
+    background: #FFC7C6;
+ }
+ .d
+ {
+    float: right;
+    background: magenta;
+    width: 50%;
+    height: 560px;
+    margin-left: 12px;
+}
+.e
+{
+    clear: both;
+    background: greenyellow;
+    height: 40px;
+}

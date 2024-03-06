@@ -1,0 +1,254 @@
+body {
+  width: 90vw;
+  height: 90px;
+  min-width: 200px;
+}
+.container {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  margin-left: 70px;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: -30px;
+  float: left;
+  min-width: 200px;
+}
+
+.red,
+.green,
+.blue {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+
+.red {
+  background-color: red;
+  top: 10px;
+  left: 0;
+  mix-blend-mode: screen;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.green {
+  background-color: green;
+  top: 10px;
+  left: 110px;
+  mix-blend-mode: screen;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.blue {
+  background-color: blue;
+  top: 80px;
+  left: 50px;
+  bottom: 20px;
+  mix-blend-mode: screen;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.texto {
+position: relative;
+  display: inline-block;
+  top: 10px;
+  margin-left: -15px;
+}
+.texto2
+{
+ position: relative;
+ display: inline-block;
+ top: 30px;
+ right: 14px;
+}
+.texto3
+{
+ position: relative;
+ display: inline-block;
+ top: 30px;
+ right: 40px;
+
+}
+.texto4
+{
+ position: relative;
+ top: 30px;
+ left: 80px;
+}
+
+ .texto5
+{
+ position: relative;
+ left: 170px;
+ top: -60px;
+}
+
+.h2v1{
+    text-align: center;
+    padding-right: 60px;
+    position: relative;
+    margin-bottom: 10px;
+    
+    
+}
+.h2v2{
+    text-align: center;
+    padding-right: 60px;
+    position: relative;
+    margin-top: 40px;
+}
+.container2 {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: -30px;
+    float: right;
+    right: 50px;
+    min-width: 200px;
+    
+  }
+.red2,.green2,.blue2, .magenta, .blue3, .green3, .cian, .green4, .red3, .yellow{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    top: 50px;
+    margin: 20px;
+    margin-top: -50px ;
+}
+
+.red2 {
+    display: inline-block;
+  background-color: red;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.green2 {
+    display: inline-block;
+    background-color: green;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    
+  }
+
+.blue2
+ {
+    display: inline-block;
+    background-color: blue;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-left: 5px;
+  }
+
+  .magenta
+ {
+    display: inline-block;
+    background-color: magenta;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-left: 5px;
+  }
+
+  .blue3
+ {
+    position: relative;
+    background-color: blue;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 70px;
+  }
+
+  .green3
+  {
+     position: relative;
+     background-color: green;
+     border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+     right: 30px;
+     top: 68px;
+   }
+
+   .cian{
+    position: relative;
+    background-color: aqua;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 168px;
+    top: 23px;
+   }
+
+   .green4
+   {
+      position: relative;
+      background-color: green;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      right: 94px;
+      top: 110px;
+    }
+
+    .red3{
+            position: relative;;
+          background-color: red;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          left: 82px;
+          top: 21px;
+        }
+
+        .yellow{
+            position: relative;;
+          background-color: yellow;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          left: 171px;
+          top: -70px;
+        }
+
+

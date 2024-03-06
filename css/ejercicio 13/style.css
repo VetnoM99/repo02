@@ -1,0 +1,19 @@
+body{
+    background: #FFFFFF;
+    width: 100vw;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+    .uno
+    {
+        width: 48%;
+        float: right;
+    }
+
+    .dos
+    {
+        width: 46%;
+        float: left;
+        padding-left: 20px;
+    }
