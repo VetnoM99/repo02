@@ -1,69 +1,117 @@
-body{
-    width: 100vw;
-    height: 100vh;
+body {
+  width: 100vw;
+  height: 100vh;
+  min-width: 200px;
+}
+header,
+main,
+footer {
+  width: 100vw;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.header1 {
+  background-color: orange;
+  display: block;
+  width: 100vw;
+  height: 5vh;
+  margin-bottom: 10px;
+}
+
+.main1 {
+  background-color: #dbec00;
+  display: block;
+  width: 100vw;
+  height: 30vh;
+  margin-bottom: 20px;
+}
+
+.main2 {
+  background-color: #4a89d0;
+  display: block;
+  width: 100vw;
+  height: 70px;
+  margin-bottom: 20px;
+}
+.footer1 {
+  background-color: #e3e3e3;
+  display: inline-block;
+  width: 49.7vw;
+  height: 50px;
+}
+
+@media (width<=324px) {
+  header {
     min-width: 200px;
-}
-header, main, footer{
-    width: 100vw;
-    margin-left: 10px;
-    margin-right: 10px;
-
-}
-.header1
-{
-    background-color: orange;
-    display: block;
-    width: 100vw;
-    height: 50px;
-    margin-bottom: 10px;
-}
-.header2
-{
-    background-color: orange;
-    display: block;
-    width: 100vw;
-    height: 50px;
-    margin-bottom: 20px;
-}
-
-.main1
-{
-    background-color: #DBEC00;
-    display: block;
-    width: 100vw;
-    height:30vh;
-    margin-bottom: 20px;
-}
-
-
-.main2
-{
-    background-color: #4A89D0;
-    display: block;
-    width: 100vw;
-    height:70px;
-    margin-bottom: 20px;
-}
-.footer1{
-    background-color: #E3E3E3;
-    display: inline-block;
-    width: 49.7vw;
-    height: 50px;
-    margin-right:
-}
-
-@media ( width<324px){
-    header, main, footer{
-        min-width: 200px;
-    }
-.main1
-{
+    margin: 3px
+  }
+  main {
+    min-width: 200px;
+    margin: 3px;
+  }
+  footer {
+    min-width: 200px;
+    margin: 3px;
+    margin-bottom: 100px;
+  }
+  .main1 {
     height: 10vh;
+    background-color: green;
+  }
+  .main2 {
+    background-color: aqua;
+    height: 17vh;
+  }
+  .footer1 {
+    width: 99vw;
+    height: 10vh;
+    margin-right: 20px;
+    background-color: bisque;
+  }
 }
-    .main2{
-        height: 20vh;
+
+@media (width>324px) {
+
+    .footer1{
+        width: 49vw;
     }
-    footer1{
-        width: 100vw;
-    }
+    
 }
+
+@media (width>=1024px) {
+    header{
+        margin-left: 3px;
+    }
+    .header1{
+        display: inline-block;
+        width: 49vw;
+        height: 8vh;
+    }
+    main{
+        margin-left: -10px;
+    }
+    .main1{
+        background-color: #e6eb9b;
+        height: 40vh;
+        margin-right: 20px;
+        margin-left: 15px;
+    }
+    .main2
+    {
+        margin-left: 15px;
+        display: inline-block;
+    width: 31vw;
+    height: 30vh;
+    background-color: #4a55cb;
+    }
+    .footer1{
+        min-width: 18vw;
+        width: 19vw;
+        height: 18vh;
+        padding: 20px;
+        margin-right: 1.5vw;
+        background-color: rgb(107, 64, 1);
+    }
+    
+}
+
