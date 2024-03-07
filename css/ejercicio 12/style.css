@@ -15,7 +15,7 @@ body{
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    outline: #D6D3CA 10px solid;
+    outline: #D6D3CA 15px solid;
     border: 1px solid black;
     box-shadow: 13px 5px 50px black;
     
@@ -37,72 +37,53 @@ body{
     z-index: 7;
 
 }
-
-.dos
-{
+.dos, .tres, .cuatro, .cinco{
     background-color: white;
     position: relative;
-    width: 33%;
-    height: 32%;
-    top: 97px;
-    left: 136px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     outline: 20px solid red;
+    box-shadow: 5px 5px 30px grey;
+}
+
+.dos
+{
+  
+    width: 33%;
+    height: 32%;
+    top: 97px;
+    left: 136px;
     z-index: 6;
     
 }
 
 .tres
 {
-    background-color: white;
-    position: relative;
     width: 60%;
     height: 60%;
     top: -90px;
     left: 80px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    outline: 20px solid red;
     z-index: 5;
 
 }
 .cuatro
 {
-    background-color: white;
-    position: relative;
     width: 80%;
     height: 80%;
     bottom: 373px;
     left: 40px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    outline: 17px solid red;
     z-index: 4;
 }
 
 .cinco
 {
-    background-color: white;
-    position: relative;
     width: 92%;
     height: 92%;
     top: -718px;
     left: 15px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     outline: 6px solid red;
     z-index: 3;
 }

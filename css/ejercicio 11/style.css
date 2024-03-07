@@ -1,78 +1,47 @@
-body
- {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
- }
-.container
-{
-    margin-top: 100px;
-    width: 200px;
-    height: 150px;
-    background-color: orangered;
-    border: 2px solid black;
-    
+body {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  margin-top: 100px;
+  width: 200px;
+  height: 150px;
+  background-color: orangered;
+  border: 2px solid black;
+}
+.uno,
+.dos,
+.tres,
+.cuatro {
+  display: inline-block;
+  text-align: center;
+  width: 20px;
+  background-color: greenyellow;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
-.uno{
-    display: inline-block;
-    width: 20px;
-    text-align: center;
-    border-radius: 50%;
-    background-color: greenyellow;
-    position: relative;
-    bottom: 10px;
-    left: -12px;
-    border: 1px solid black;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+.uno {
+  position: relative;
+  bottom: 10px;
+  left: -12px;
 }
-.dos{
-    display: inline-block;
-    text-align: center;
-    width: 20px;
-    background-color: greenyellow;
-    position: relative;
-    left: 165px;
-    top: -10px;
-    border: 1px solid black;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+.dos {
+  left: 165px;
+  top: -10px;
 }
-.tres{
-    display: inline-block;
-    text-align: center;
-    width: 20px;
-    background-color: greenyellow;
-    position: relative;
-    left: -63px;
-    top: 141px;
-    border: 1px solid black;
-    border-radius: 50%;
-    
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+.tres {
+  left: -63px;
+  top: 141px;
 }
-.cuatro{
-    display: inline-block;
-    text-align: center;
-    width: 20px;
-    background-color: greenyellow;
-    position: relative;
-    left: 115px;
-    top: 141px;
-    border: 1px solid black;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+
+.cuatro {
+  left: 115px;
+  top: 141px;
 }
