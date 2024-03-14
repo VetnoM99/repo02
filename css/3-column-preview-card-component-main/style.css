@@ -1,0 +1,227 @@
+body {
+    margin: 0px;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;flex-wrap: wrap;
+}
+
+/*google fonts*/
+p {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: hsl(0, 0%, 100%, 0.75);
+}
+
+h3 {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: hsl(0, 0%, 95%);
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    order: 1;
+}
+
+.sedans {
+    background-color: #e38724;
+    padding: 20px;
+}
+
+.sedans-img {
+    background: url(./images/icon-sedans.svg);
+    width: 64px;
+    height: 40px;
+}
+
+.sedan-boton {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 50px;
+    width: 75%;
+    text-align: center;
+}
+
+.sedan-boton p {
+    color: #e38724;
+}
+
+.suvs {
+    padding: 20px;
+    background-color: #016773;
+}
+
+.suvs-img {
+    background: url(./images/icon-suvs.svg);
+    width: 64px;
+    height: 40px;
+}
+
+.suvs-boton {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 50px;
+    width: 75%;
+    text-align: center;
+}
+
+.suvs-boton p {
+    color: #016773;
+}
+
+.luxury {
+    background-color: #023f40;
+    padding: 20px;
+}
+
+.luxury-img {
+    background: url(./images/icon-luxury.svg);
+    width: 64px;
+    height: 40px;
+}
+
+.luxury-boton {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 50px;
+    width: 75%;
+    text-align: center;
+}
+
+.luxury-boton p {
+    color: #023f40;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    order: 2;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@media (width < 375px) {
+    .suvs, .sedans, .luxury {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        height: 70vh;
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .sedans h3 {
+        font-size: 30px;
+    }
+
+    .sedans>p {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    .sedan-boton p {
+        font-size: 20px;
+    }
+.suvs h3 {
+    font-size: 30px;
+}
+
+.suvs>p {
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.suvs-boton p {
+    font-size: 20px;
+}
+
+.luxury {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 60vh;
+    padding: 30px;
+    gap: 30px;
+}
+
+.luxury h3 {
+    font-size: 30px;
+}
+
+.luxury>p {
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.luxury-boton p {
+    font-size: 20px;
+}
+footer{
+    height: 50px;
+}
+}
+@media (width > 375px) {
+    body {
+       
+    }
+
+    .container{
+        display: grid;
+        grid-template:repeat(20, 11%) / repeat(20, 13%);
+    }
+
+    .sedans{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        order: 1;
+        grid-area: 3/2/span 5/span 2;
+    }
+    
+    .sedans h3{
+        font-size: 30px;
+    }
+
+    .sedans p{
+        font-size: 17px;
+    }
+
+    .suvs{
+        order: 2;
+        grid-area: 3/4/span 5/span 2;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .suvs h3{
+        font-size: 30px;
+    }
+
+    .suvs p{
+        font-size: 17.5px;
+    }
+    .luxury {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        grid-area: 3/6/span 5/span 2;
+    }
+    .luxury h3{
+    font-size: 30px;
+    }
+    .luxury p{
+        font-size: 20.1px;
+    }
+    .attribution{
+        order: 4;
+        justify-self: end;
+        grid-area: 9/2/span 3/span 4;
+    }
+
+}
