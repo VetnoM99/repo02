@@ -1,0 +1,384 @@
+/* Generic Css*/
+body,
+header,
+main {
+    margin: 0px;
+    min-width: 950px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 124);
+}
+a:hover
+{
+    color:  rgb(9, 9, 181);
+}
+
+nav {
+    overflow: hidden;
+}
+
+.nav-arriba {
+
+    width: 98.6vw;
+    height: 83px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    overflow: hidden;
+
+}
+
+.nav-arriba h2 {
+    position: relative;
+    left: -145px;
+    bottom: 10px;
+    z-index: 2;
+    order: 2;
+}
+
+.logo {
+    display: inline-block;
+    position: relative;
+    width: 220px;
+    height: 82px;
+    z-index: 1;
+    align-self: start;
+    order: 1
+}
+
+.link-logo {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    z-index: 3;
+    order: 3;
+    bottom: 25px;
+    left: 120px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+}
+
+.nav-links {
+    position: relative;
+    top: -20px;
+    left: -40px;
+    order: 5;
+    display: flex;
+    gap: 80px;
+    font-size: 20px;
+    min-width: 950px;
+}
+
+.nav-links-line {
+    display: block;
+    outline: 2px solid rgb(158, 158, 158);
+    background-color: rgb(165, 165, 165);
+    width: 950px;
+    height: 0.1px;
+    position: absolute;
+    top: 30px;
+    left: -30px;
+}
+
+.nav-link1,
+.nav-link2 {
+    padding-left: 10px;
+
+}
+
+.nav-link2 {
+    border-left: 0.1px groove black;
+    padding-left: 40px;
+
+}
+
+.nav-link2 a {
+    color: brown;
+}
+
+.nav-arriba2 {
+ 
+    display: flex;
+    justify-content: center;
+    width: 70vw;
+    min-width: 900px;
+    height: 40px;
+    position: absolute;
+    top: 70px;
+    left: 260px;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+/* buscador*/
+.contenedor-busqueda {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.campo-busqueda {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.campo-busqueda select {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    /* Elimina los estilos de selección predeterminados */
+}
+
+.campo-busqueda input {
+    width: 700px;
+    height: 30px;
+    padding-right: 30px;
+    /* Espacio para el selector */
+}
+
+.nav-links2 {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 252, 252, 0.5) 50%, rgba(229, 228, 228, 0.685) 100%), #e0dcdc;
+    /* Gradiente para el efecto de fundido */
+}
+
+.contenedor-main {
+    display: flex;
+    background-color: blanchedalmond;
+    width: 98vw;
+    height: 550px;
+    min-width: 900px;
+    overflow: hidden;
+    border-bottom: 1px solid rgb(193, 188, 188);
+    margin-bottom: -8px;
+}
+
+.contenedor-fotos {
+    margin-top: 10px;
+    display: grid;
+    grid-template: 50px 50px 50px 50px 50px 50px / 10px 10px;
+    background-color: beige;
+    width: 40vw;
+    height: 500px;
+    min-width: 590px;
+}
+
+.foto-main {
+    grid-area: 1/4;
+    margin: 0px;
+}
+
+.fotop1 {
+    grid-area: 2/3;
+}
+
+.fotop2 {
+    grid-area: 4/3;
+}
+
+.video{
+    grid-area: 7/3;
+}
+
+.contenido-main {
+    display: inline-block;
+    width: 58vw;
+    height: 120px;
+    min-width: 950px;
+    margin-left: 10px;
+}
+
+.viaje {
+    color: chocolate;
+}
+
+.contenedor-main p {
+    font-size: 20px;
+}
+
+.contenedor-main2 h2 {
+    color: chocolate;
+    margin-left: 20px;
+}
+
+.contenedor-main h5 {
+    border-bottom: 1px solid rgb(185, 184, 184);
+}
+
+.disponible {
+    color: yellowgreen;
+}
+
+.contenedor-main2 {
+    width: 97vw;
+
+    background-color: aqua;
+    min-width: 900px;
+    margin-top: 10px;
+
+}
+
+.compra {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: start;
+    margin-left: 10px;
+}
+
+.compra span {
+    font-size: 30px;
+}
+
+.boton {
+    background: linear-gradient(to bottom, rgba(255, 247, 247, 0.8) 0%, rgba(237, 230, 173, 0.5) 50%, rgba(191, 190, 190, 0.685) 100%), #e0dcdc;
+    border-radius: 50px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    color: blue;
+    min-width: 200px;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    font-size: 23px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(185, 184, 184);
+    margin-left: 20px;
+}
+
+.detalles-producto {
+    margin-left: 20px;
+    font-size: 21px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(185, 184, 184);
+
+}
+
+.lista1{
+    list-style: none;
+    margin-top: -10px;
+}
+
+.lista1 li{
+    padding-left: 30px;
+}
+
+.lista2{
+    margin-top: -10px;
+    list-style: none;
+}
+
+
+.lista2 li{
+    padding-left: 30px;
+}
+
+.des-producto{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(185, 184, 184);
+}
+
+.des-producto p{
+font-size: 22px;
+}
+
+.experiencia{
+    background-color: bisque;
+    width: 97vw;
+    height: 500px;
+    display: flex;
+}
+
+.calificacion{
+    background-color: steelblue;
+    margin-left: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.calificacion a{
+    display: inline-block;
+}
+.estrellas{
+    margin-left: 20px;
+
+}
+.contenedor-barras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.b1-texto, .b2-texto, .b3-texto ,.b4-texto ,.b5-texto{
+    display: inline-block;
+    text-align: center;
+}
+.barra1, .barra2, .barra3, .barra4, .barra5{
+    display: inline-block;
+    background-color: bisque;
+    width: 110px;
+    height: 30px;
+    overflow: hidden;z-index: 1;
+}
+
+.relleno1
+{
+    background-color: rgb(235, 147, 39);
+    width: 105px;
+    height: 30px;
+}
+.b1-texto2,.b2-texto2, .b3-texto2, .b4-texto2, .b5-texto2{
+    text-align: center;
+    display: inline-block; 
+    padding-left: 10px;
+    color: rgb(191, 191, 191);
+}
+
+.relleno2
+{
+    background-color: rgb(235, 147, 39);
+    width: 100px;
+    height: 30px;
+}
+
+.relleno3
+{
+    background-color: rgb(235, 147, 39);
+    width: 100px;
+    height: 30px;
+}
+
+
+.relleno4
+{
+    background-color: rgb(235, 147, 39);
+    width: 100px;
+    height: 30px;
+}
+
+.relleno5
+{
+    background-color: rgb(235, 147, 39);
+    width: 100px;
+    height: 30px;
+}

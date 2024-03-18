@@ -103,7 +103,7 @@ h3 {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
-@media (width < 375px) {
+@media (width < 700px) {
     .suvs, .sedans, .luxury {
         display: flex;
         flex-direction: column;
@@ -165,14 +165,12 @@ footer{
     height: 50px;
 }
 }
-@media (width > 375px) {
-    body {
-       
-    }
-
+@media (width > 700px) {
     .container{
         display: grid;
         grid-template:repeat(20, 11%) / repeat(20, 13%);
+        min-width: 700px;
+        min-height: 700px;
     }
 
     .sedans{
@@ -188,7 +186,7 @@ footer{
     }
 
     .sedans p{
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .suvs{
@@ -204,7 +202,7 @@ footer{
     }
 
     .suvs p{
-        font-size: 17.5px;
+        font-size: 15.5px;
     }
     .luxury {
         display: flex;
@@ -216,7 +214,7 @@ footer{
     font-size: 30px;
     }
     .luxury p{
-        font-size: 20.1px;
+        font-size: 16px;
     }
     .attribution{
         order: 4;
