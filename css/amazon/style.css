@@ -10,9 +10,9 @@ a {
     text-decoration: none;
     color: rgb(0, 0, 124);
 }
-a:hover
-{
-    color:  rgb(9, 9, 181);
+
+a:hover {
+    color: rgb(9, 9, 181);
 }
 
 nav {
@@ -58,6 +58,8 @@ nav {
     order: 3;
     bottom: 25px;
     left: 120px;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .nav-list {
@@ -106,17 +108,16 @@ nav {
 }
 
 .nav-arriba2 {
- 
+
     display: flex;
     justify-content: center;
     width: 70vw;
     min-width: 900px;
-    height: 40px;
+    height: 30px;
     position: absolute;
     top: 70px;
     left: 260px;
     overflow: hidden;
-    margin-bottom: 0px;
 }
 
 /* buscador*/
@@ -129,7 +130,7 @@ nav {
 .campo-busqueda {
     position: relative;
     display: inline-block;
-    margin-left: 20px;
+
 }
 
 .campo-busqueda select {
@@ -138,15 +139,30 @@ nav {
     right: 0;
     height: 100%;
     padding: 5px;
-    border: none;
-    background-color: transparent;
+    border-top: 1px solid black;
+    border-bottom: 1px solud black;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 252, 252, 0.5) 50%, rgba(229, 228, 228, 0.685) 100%), #e0dcdc;
     /* Elimina los estilos de selección predeterminados */
+}
+
+.buscar-tex {
+    margin-right: 20px;
+}
+
+.buscar-boton {
+    margin-left: -1px;
+    background-color: #313A44;
+    width: 50px;
+    height: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
 }
 
 .campo-busqueda input {
     width: 700px;
-    height: 30px;
-    padding-right: 30px;
+    height: 26px;
+    padding-right: 10px;
     /* Espacio para el selector */
 }
 
@@ -159,7 +175,6 @@ nav {
 
 .contenedor-main {
     display: flex;
-    background-color: blanchedalmond;
     width: 98vw;
     height: 550px;
     min-width: 900px;
@@ -167,19 +182,50 @@ nav {
     border-bottom: 1px solid rgb(193, 188, 188);
     margin-bottom: -8px;
 }
-
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: #EBF3FE;
+    position: absolute;
+    left: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid blue;
+}
+.caja-cabeza{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: 0px;
+    text-align: center;
+    background-color: #C0DBF2;
+    align-self: flex-start;
+    width: 200px;
+    height: 50px;
+}
+.caja-boton1{
+    box-shadow: 1px 1px 5px;
+    border-radius: 20px;
+    outline: 1px solid black;
+    text-align: center;
+    width: 150px;
+    height: 20px;
+    background: linear-gradient(to bottom, rgba(255, 247, 247, 0.8) 0%, rgba(237, 230, 173, 0.5) 50%, rgba(191, 190, 190, 0.685) 100%), #e0dcdc;
+}
 .contenedor-fotos {
     margin-top: 10px;
     display: grid;
     grid-template: 50px 50px 50px 50px 50px 50px / 10px 10px;
-    background-color: beige;
+
     width: 40vw;
     height: 500px;
     min-width: 590px;
 }
 
 .foto-main {
-    grid-area: 1/4;
+    grid-area: 2/4;
     margin: 0px;
 }
 
@@ -191,7 +237,7 @@ nav {
     grid-area: 4/3;
 }
 
-.video{
+.video {
     grid-area: 7/3;
 }
 
@@ -226,8 +272,6 @@ nav {
 
 .contenedor-main2 {
     width: 97vw;
-
-    background-color: aqua;
     min-width: 900px;
     margin-top: 10px;
 
@@ -257,6 +301,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 2px 2px 20px;
+    margin-left: 20px;
 }
 
 .checkbox {
@@ -274,111 +320,148 @@ nav {
 
 }
 
-.lista1{
+.lista1 {
     list-style: none;
     margin-top: -10px;
 }
 
-.lista1 li{
+.lista1 li {
     padding-left: 30px;
 }
 
-.lista2{
+.lista2 {
     margin-top: -10px;
     list-style: none;
 }
 
 
-.lista2 li{
+.lista2 li {
     padding-left: 30px;
 }
 
-.des-producto{
+.des-producto {
+    width: 97vw;
     padding-bottom: 20px;
     border-bottom: 1px solid rgb(185, 184, 184);
+    min-width: 950px;
+    overflow: hidden;
+    margin-left: 20px;
 }
 
-.des-producto p{
-font-size: 22px;
+.des-producto p {
+    font-size: 22px;
+    overflow: hidden;
 }
 
-.experiencia{
-    background-color: bisque;
+.experiencia {
     width: 97vw;
-    height: 500px;
+    height: 300px;
     display: flex;
 }
 
-.calificacion{
-    background-color: steelblue;
+.calificacion {
+
     margin-left: 20px;
     width: 300px;
     display: flex;
     flex-direction: column;
 }
-.calificacion a{
+
+.calificacion a {
     display: inline-block;
 }
-.estrellas{
-    margin-left: 20px;
+
+.estrellas {
+    margin-left: 60px;
+    margin-top: 20px;
 
 }
-.contenedor-barras{
+
+.contenedor-barras {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.b1-texto, .b2-texto, .b3-texto ,.b4-texto ,.b5-texto{
+
+.b1-texto,
+.b2-texto,
+.b3-texto,
+.b4-texto,
+.b5-texto {
     display: inline-block;
     text-align: center;
 }
-.barra1, .barra2, .barra3, .barra4, .barra5{
+
+.barra1,
+.barra2,
+.barra3,
+.barra4,
+.barra5 {
     display: inline-block;
     background-color: bisque;
     width: 110px;
     height: 30px;
-    overflow: hidden;z-index: 1;
+    overflow: hidden;
+    z-index: 1;
 }
 
-.relleno1
-{
+.relleno1 {
     background-color: rgb(235, 147, 39);
     width: 105px;
     height: 30px;
 }
-.b1-texto2,.b2-texto2, .b3-texto2, .b4-texto2, .b5-texto2{
+
+.b1-texto2,
+.b2-texto2,
+.b3-texto2,
+.b4-texto2,
+.b5-texto2 {
     text-align: center;
-    display: inline-block; 
+    display: inline-block;
     padding-left: 10px;
     color: rgb(191, 191, 191);
 }
 
-.relleno2
-{
+.relleno2 {
     background-color: rgb(235, 147, 39);
-    width: 100px;
+    width: 80px;
     height: 30px;
 }
 
-.relleno3
-{
-    background-color: rgb(235, 147, 39);
-    width: 100px;
-    height: 30px;
+.comentario {
+    width: 70vw;
+    min-width: 900px;
 }
 
-
-.relleno4
-{
-    background-color: rgb(235, 147, 39);
-    width: 100px;
-    height: 30px;
+.comentario p {
+    font-size: 25px;
 }
 
-.relleno5
-{
-    background-color: rgb(235, 147, 39);
-    width: 100px;
-    height: 30px;
+.exp2 {
+    margin-left: 20px;
+    width: 96vw;
+    min-width: 950px;
+    height: 600px;
+
 }
+.exp2 h4{
+    color: rgb(150, 154, 157);
+}
+.exp2-texto{
+    font-size: 20px;
+    width: 600px;
+    margin-left: 20px;
+}
+
+.boton-yes, .boton-no{
+    display: inline-block;
+    margin-left: 20px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(211, 211, 211, 0.5) 50%, rgba(144, 143, 143, 0.685) 100%), #c7c7c7;
+    border: 1px solid black;
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    border-radius: 20px;
+}
+

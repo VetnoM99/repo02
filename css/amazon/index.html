@@ -13,7 +13,7 @@
                 <h2>ALESSI</h2>
             <div class="logo">
                 <img src="./img/logo.png" alt="" width="220px" height="80px">
-                <a href="" class="link-logo"> Contratame 😁</a>
+                <a href="" class="link-logo"> Contratar 😁</a>
             </div>
             <div class="nav-links">
                 <span class="nav-links-line"></span>
@@ -24,7 +24,7 @@
             
         <div class="nav-arriba2">
             <div class="contenedor-busqueda">
-                <label for="busqueda">🔎:</label>
+                <label for="busqueda" class="buscar-tex">Buscar 🔎</label>
                 <div class="campo-busqueda">
                   <select id="selector-busqueda" name="selector-busqueda">
                     <option value="opcion1">Trabajos</option>
@@ -33,9 +33,9 @@
                     <option value="opcion3">Monitor de tiempo libre</option>
                     <option value="opcion3">Cocinero</option>
                   </select>
-                  <input type="text" id="busqueda" name="busqueda" placeholder="Ingrese su búsqueda aquí">
+                  <input type="text" id="busqueda" name="busqueda" placeholder="Que quiere saber de mi?">
                 </div>
-                <button type="submit">Buscar</button>
+                <button type="submit" class="buscar-boton">GO</button>
               </div>
               </div>
               <div class="nav-links2">
@@ -45,6 +45,7 @@
                 <span><a href="">Cocinero</a></span>
                 <span><a href="">Monitor de tiempo libre</a></span>
             </div>
+
             
         </div>
         </nav>
@@ -53,7 +54,7 @@
         <div class="contenedor-main">
         <div class="contenedor-fotos">
             <div class="foto-main">
-                <img src="./img/foto-main.jpg" alt="" width="375px" >
+                <img src="./img/foto-main.jpg" alt="" width="375px" height="" >
             </div>
             <div class="fotop1">
                 <img src="./img/fotop1.jpg" alt="" width="150px">
@@ -76,7 +77,11 @@
             <h5>by <a href="https://www.linkedin.com/in/eric-fabricio-alessi-23b147267/">Eric Fabricio Alessi</a></h5>
             <h2 class="disponible">Actualmente disponible</h2>
             <p>Estoy dispiesto ah acpetar cualquier trabajo que me propongan</p>
-
+            <div class="caja">
+                <p class="caja-cabeza">Quieres uno?</p>
+                <p class="caja-boton1">Quieres?</p>
+                <p class="caja-boton2"><img src="./img/quieres.png" alt="" width="75px"></p>
+            </div>
             <ul>
                 <li> Competencia dual</li>
                 <li> Iniciativa</li>
@@ -154,16 +159,18 @@
         <div class="estrellas">
         <span ><img src="./img/estrellas.png" alt="" width="130px"> <a href="#">(3)</a></span>
     </div>
-    <div class="barras" title="pon algo ingenioso">
+    <div class="barras">
         <div class="contenedor-barras">
+            <div title="Pon algo ingenioso">
             <a href="#">
-                <div class="b1-texto">5 stars</div>
+                <div class="b1-texto" title="">5 stars</div>
                 <div class="barra1">
                     <div class="relleno1"> </div>
                 </div>
                 <div class="b1-texto2">2
             </div>
             </a>
+        </div>
             <a href="#">
                 <div class="b2-texto">4 stars</div>
                 <div class="barra2">
@@ -173,19 +180,27 @@
             </div>
             </a>
             <a href="#">
-                <div class="b3-texto">4 stars</div>
+                <div class="b3-texto">3 stars</div>
                 <div class="barra3">
                     <div class="relleno3"> </div>
                 </div>
-                <div class="b3-texto2">1
+                <div class="b3-texto2">0
             </div>
             </a>
             <a href="#">
-                <div class="b4-texto">4 stars</div>
+                <div class="b4-texto">2 stars</div>
                 <div class="barra4">
                     <div class="relleno4"> </div>
                 </div>
-                <div class="b4-texto2">1
+                <div class="b4-texto2">0
+            </div>
+            </a>
+            <a href="#">
+                <div class="b5-texto">1 stars</div>
+                <div class="barra5">
+                    <div class="relleno5"> </div>
+                </div>
+                <div class="b5-texto2">0
             </div>
             </a>
         </div>
@@ -193,8 +208,31 @@
     </div>
     </div>
     <div class="comentario">
+        <p><i>"Eric fue una gran inspiracion para nuestra empresa por su trabajo en equipo, buen anbiente y progrecion que obtuvimos a su gran ayuda"</i></p>
 
+        <h6>Mariano Simon, IT Department de <a href="https://eu.bic.com/es-es">Bic Graphic</a></h6>
+        <p><i>"El señor alessi era uno de los mejores trabajodres que pude tener ya que trataba a mis cleintes de la mejor forma posible para que se sintieran a gusto con lo cual me da a entender que por dentro es una gran persona"</i></p>
+
+        <h6>Claudio Alessi, CEO de <a href="#">C.O.A</a></h6>
     </div>
+</div>
+<div class="exp2">
+    <h2>Experiencia mas relevante</h2>
+    <h4>3 de 3 personas encontraron esto util</h4>
+    <span><img src="./img/estrellas.png" alt="" width="100px"> <b> CodeCrafters, Marketing </b> desde 1742</span>
+    <p>en <a href="https://codecrafters.io/">CodeCrafters</a></p>
+    <div class="exp2-texto">
+    <p >Como compañero desarrollador en CodeCrafters, tengo el privilegio de trabajar junto a Eric Alessi. Su habilidad para resolver problemas complejos y su dedicación son realmente impresionantes. Eric siempre está dispuesto a ayudar y comparte sus conocimientos de manera clara y concisa. Su enfoque meticuloso y su pasión por la programación hacen de él un activo invaluable para nuestro equipo</p>
+        <ul>
+            <li>Habilidad para resolver problemas complejos.</li>
+            <li>dedicacion y comprimiso por el trabaho.</li>
+            <li>Disposicion para ayudar y compartir conocimientos.</li>
+            <li>Claridad y concision en la comunicacion</li>
+            <li>Enfoque meticuloso en las tareas</li>
+            <li>Pasion por la Programacion</li>
+        </ul>
+        <span><a href="#">22 comentarios</a> | Esto te resulto de utilidad? <div class="boton-yes">yes</div> <div class="boton-no">no</div></span>
+</div>
 </div>
     </main>
 </body>
