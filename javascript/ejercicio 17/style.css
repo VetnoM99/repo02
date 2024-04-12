@@ -1,0 +1,88 @@
+body{
+    background-color: black;
+}
+#container-general{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+#container-foco{
+    display: flex;
+    width: 100vw;
+    height: 68vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex: 2;
+}
+.foco {
+  width: 179px;
+    height: 128px;
+    background-image: url(./img/focoOff.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    order: 2;
+    left: 210px;
+    position: relative;
+  }
+  
+  .barras {
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  
+  input[type="range"] {
+    width: 150px;
+  }
+  
+  button {
+    border: none; /* Quita el borde */
+    background-color: transparent; /* Hace que el fondo sea transparente */
+    color: white; /* Cambia el color del texto */
+    padding: 10px 20px; /* Añade espaciado interno */
+    font-size: 16px; /* Cambia el tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  }
+  
+  button:focus {
+    outline: none; /* Quita el contorno al enfocar el botón */
+  }
+  
+  .foco-luz {
+    display: flex;
+    justify-content: center;
+    width: 132px;
+    height: 130px;
+    background-image: url(./img/focoON.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform-origin: center;
+    order: 2;
+    position: relative;
+    top: 308px;
+    left: -96px;
+    transition: background-image 0.5s ease;
+ }
+  
+
+  .apagado{
+    background-image: url(./img/interruptorOff.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 68px;
+    height: 67px;
+  }  
+  .encendido{
+    background-image: url(./img/interruptorON.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 68px;
+    height: 67px;
+  }

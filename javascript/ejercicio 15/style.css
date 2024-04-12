@@ -1,0 +1,25 @@
+#container-manos
+{
+    background-color: black;
+    width: 80vw;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}#descanso{
+    position: relative;
+
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+     transform: scaleX(-1);
+}
+#descanso2{
+    position: relative;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+ 
+}
+

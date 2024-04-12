@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-direction: column;
+    width: 50vw;
+  }
+  
+  #inputBox, #outputBox {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  #inputBox input[type="number"] {
+    width: 90px;
+    margin-right: 5px;
+    height: 20px;
+  }
+  
+  button {
+    margin-right: 5px;
+  }
+  
+  #emoticons {
+display: inline;
+    
+  }
+.cont-emo{
+    display: inline;
+    font-size: 30px;
+  }
+  .cont-emo p{display: inline;}
+  
+  .emoticon {
+    font-size: 24px;
+    margin: 5px;
+    opacity: 0;
+  }
+  
+  .slide-in {
+    animation: slideIn 0.5s forwards;
+  }
+  
+  .slide-out {
+    animation: slideOut 0.5s forwards;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+  

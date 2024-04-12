@@ -1,0 +1,41 @@
+.container-general{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+}
+
+
+#eat{
+    background-color: #B8FBB6;
+
+}
+#progressBar-eat {
+    overflow: hidden; 
+    background-color: #3c813f;;
+    border: 2px solid black;
+    width: 100%;
+    height: 25px;
+    border-radius: 50px;
+    z-index: 1;
+    background-color: transparent;
+}
+
+#fillBar-eat {
+    position: relative;
+    top: 1%;
+    width: 120px;
+    height: 23px;
+    background-color: #4caf50;
+    text-align: center;
+
+    font-weight: bold;
+    line-height: 20px;
+    transition: width 1s ease;
+    overflow: hidden; /* Oculta el desbordamiento */
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+p{
+    color: orange;
+}

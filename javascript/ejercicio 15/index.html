@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piedra, Papel o Tijera</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Piedra, Papel o Tijera</h1>
+  <div id="resultado">gg</div>
+
+  <div id="opciones">
+    <button onclick="jugar('piedra')" >🪨</button>
+    <button onclick="jugar('papel')" >🧻</button>
+    <button onclick="jugar('tijeras')">✂️</button>
+  </div>
+  <div id="container-manos">
+    <div id="mano-usuario" >
+      <img src="./img/R.png" alt="papel" id="descanso" width="200px" height="100px">
+  </div>
+  <div id="mano-computadora" >
+    <img src="./img/R.png" alt=""  id="descanso2" width="200px" height="100px">
+  </div>
+  </div>
+  <div id="eleccion-computadora"></div> 
+ 
+  <script src="./main.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foco</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Foco</h1>
+  <div id="container-general">
+    <div class="foco-luz"></div>
+    <button onclick="toggleFoco()" id="boton"><div id="interruptor" class="apagado"></div></button>
+  </div> 
+  <div id = "container-foco">
+  <div class="foco"></div>
+  <div class="barras">
+    <p>luminosidad</p>
+    <input type="range" min="0" max="100" value="50" class="luminosidad">
+    <p>tamaño</p>
+    <input type="range" min="0" max="100" value="50" class="tamaño">
+    <p>angulo</p>
+    <input type="range" min="-90" max="90" value="0" class="inclinacion">
+</div>
+</div>
+  <script src="./main.js"></script>
+</body>
+</html>

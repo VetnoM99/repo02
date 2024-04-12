@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emoticonos Aleatorios</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="inputBox">
+      <h2>Input Box</h2>
+      <button onclick="meter('push')">Push</button>
+      <button onclick="meter('unshift')">Unshift</button>
+      <button onclick="meter('insert')" >Insert At</button>
+      <input type="number" id="spaces" placeholder="Espacios" required>
+    </div>
+    <div id="outputBox">
+      <h2>Output Box</h2>
+      <button onclick="quitar('pop')">Pop</button>
+      <button onclick="quitar('shift')">Shift</button>
+      <button onclick="quitar('random')">random</button>
+      <button onclick="quitar('removeAt')">remove At</button>
+      <button onclick="quitartodo()">Limpiar</button>
+     
+    </div>
+    <div class="cont-emo"> <p >[
+    <div id="emoticons"></div>
+    ]
+</p>
+</div>  
+</div>
+  <script src="./main2.js"></script>
+</body>
+</html>
