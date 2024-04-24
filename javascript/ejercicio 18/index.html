@@ -1,29 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
-</head>
-<body>
-    <div id="container-general">
-        <div id="eat">
-            <div class="barra1">
-                <div id="progressBar-eat">
-                <div id="fillBar-eat"></div>
-            </div>
-                <p id="fillBar-eat-txt">100%</p>
-                <button onclick="fillProgress(10)">Botón 1</button>
-                <button onclick="fillProgress(20)">Botón 2</button>
-                <button onclick="fillProgress(30)">Botón 3</button>
-              </div>
-        
-        <div id="play"></div>
-        <div id="fight"></div>
-        <div id="sleep"></div>
-    </div>
 
-    <script src="./main.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="container-general">
+    <div id="eat">
+      <div id="container-eat-botones">
+        <button onclick="fillProgress(Math.floor(Math.random()*60))" id="eat-b1">
+          <div id="comida1"></div>
+        </button>
+        <button onclick="fillProgress(Math.floor(Math.random()*10))" id="eat-b2">
+          <div id="comida2"></div>
+        </button>
+        <button onclick="fillProgress(Math.floor(Math.random()*10))" id="eat-b3">
+          <div id="comida3"></div>
+        </button>
+      </div>
+      <div class="barra-eat">
+        <div id="progressBar-eat">
+          <div id="fillBar-eat"></div>
+        </div>
+
+        <p id="fillBar-eat-txt">100%</p>
+
+        <h2 id="t-eat">EAT</h2>
+      </div>
+    </div>
+    <div id="train">
+      <div id="container-train-botones">
+        <button onclick="fillProgress2(Math.floor(Math.random()*10))" id="train-b1">
+          <div id="train1"></div>
+        </button>
+        <button onclick="fillProgress2(Math.floor(Math.random()*10))" id="train-b2">
+          <div id="train2"></div>
+        </button>
+        <button onclick="fillProgress2(Math.floor(Math.random()*10))" id="train-b3">
+          <div id="train3"></div>
+        </button>
+      </div>
+      <div id="barra-train">
+        <div id="progressBar-train">
+          <div id="fillBar-train"></div>
+        </div>
+
+      </div>
+      <p id="fillBar-train-txt">100%</p>
+      <h1 id="t-train">train</h1>
+    </div>
+    <div id="fight">
+      <h1 id="t-fight">fight</h1>
+      <div id="container-fight-botones">
+        <button onclick="fillProgress3(Math.floor(Math.random()*10))" id="fight-b1">
+          <div id="fight1"></div>
+        </button>
+        <button onclick="fillProgress3(Math.floor(Math.random()*10));" id="fight-b2">
+          <div id="fight2"></div>
+        </button>
+      </div>
+      <div class="barra3">
+        <div id="progressBar-fight">
+          <div id="fillBar-fight"></div>
+        </div>
+        <p id="fillBar-fight-txt">100%</p>
+      </div>
+    </div>
+    <div id="sleep">
+      <h1 id="t-sleep">sleep</h1>
+
+      <div id="container-sleep-botones">
+        <button onclick="fillProgress4(Math.floor(Math.random()*60))" id="sleep-b1">
+          <div id="sleep1"></div>
+        </button>
+      </div>
+      <div id="barra-sleep">
+        <div id="progressBar-sleep">
+          <div id="fillBar-sleep"></div>
+        </div>
+      </div>
+      <p id="fillBar-sleep-txt">100%</p>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div id="personaje">
+  <div id="container-imagen">
+    <img src="./img/stand.gif" alt="" id="sprite">
+  <img src="./img/Goku_vs_vegeta.webp" id="sprite2" alt="">
+  <img src="./img/cargando ki.gif" id="ki" alt="">
+  <img src="./img/goku10.gif" id="pesa" alt="">
+</div>
+
+  <div id="progressBar-vida">
+  <div id="fillBar-cora"></div>
+</div>
+  <p id="vida-txt">100%</p>
+
+
+  <div id="progressBar-goku">
+    <div id="fillBar-goku"></div>
+  </div>
+  <p id="fillBar-goku-txt">100% Energy</p>
+
+  
+  
+</div>
+
+  <script src="./main.js"></script>
 </body>
+
+
+
+</div>
+
 </html>

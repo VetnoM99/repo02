@@ -1,0 +1,71 @@
+#container-general{
+  width: 100vw;
+  height: 100vh;
+}
+.title{
+  display: inline-block;
+  color: white;
+  height: 5px;
+}
+
+#display{
+  background-color: #192033;
+  color: white;
+  font-size: 20px;
+}
+  .calculator {
+    width: 400px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: #394666;
+  }
+  
+  #display {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 20px;
+  }
+  /* Estilo inicial del slider */
+.slider {
+  width: 15%;
+ background-color: red;
+ position: fixed;
+ left: 65%;
+}
+#themeValue´{
+  position: fixed;
+  left: 70%;
+  color: white;
+  background-color: white;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+
+}
+#equalsButton{
+  grid-column: span 2;
+  background-color: red;
+}
+
+#deleteButton{
+  background-color: red;
+}
+#clearButton{
+  background-color: red;
+  grid-area: 5/2;
+}

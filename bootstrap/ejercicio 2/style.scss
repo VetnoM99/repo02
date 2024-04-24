@@ -1,0 +1,9 @@
+$primary: red;
+$secondary: rgb(138, 237, 197);
+$success: blue;
+$info: rgb(199, 199, 108);
+$warning: rgb(188, 154, 91);
+$danger: rgb(152, 238, 152);
+$light: rgb(90, 54, 87);
+$dark : rgb(63, 63, 63);
+@import "../../node_modules/bootstrap/scss/bootstrap.scss"

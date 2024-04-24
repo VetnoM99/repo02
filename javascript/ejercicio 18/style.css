@@ -1,41 +1,302 @@
-.container-general{
-    width: 100vw;
-    height: 90vh;
+
+body{
+    margin: 0px;
+}
+#container-general{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    grid-template-rows: repeat(2, 1fr);; /* Dos filas iguales */
+    height: 100vh; /* Altura total de la ventana */
+}
+#container-eat-botones,#container-train-botones,#container-fight-botones, #container-sleep-botones{
     display: flex;
-}
-
-
-#eat{
-    background-color: #B8FBB6;
+    gap: 20px;
 
 }
-#progressBar-eat {
+
+#eat-b1,#eat-b2,#eat-b3{
+    background-color:#B8FBB6;
+}
+#train-b1, #train-b2,#train-b3{
+    background-color:  #FFFD96;
+}
+#fight-b1,#fight-b2,#fight-b3{
+    background-color:  #FE9798;
+}
+#fight-b3,#sleep-b1,#sleep-b2,#sleep-b3{
+background-color: #87CEEA;
+}
+#progressBar-eat, #progressBar-train, #progressBar-fight, #progressBar-sleep, #progressBar-goku, #progressBar-vida {
     overflow: hidden; 
     background-color: #3c813f;;
     border: 2px solid black;
-    width: 100%;
-    height: 25px;
+    width: 45vw;
+    height: 15px;
     border-radius: 50px;
     z-index: 1;
-    background-color: transparent;
-}
+    background-color: black;
 
-#fillBar-eat {
+}
+#progressBar-eat, #progressBar-train{
+    margin-top: 20px;
+}
+#progressBar-fight, #progressBar-sleep{
+    margin-bottom: 10px;
+}
+#fillBar-eat, #fillBar-train,  #fillBar-fight, #fillBar-sleep, #fillBar-goku, #fillBar-cora {
     position: relative;
     top: 1%;
     width: 120px;
-    height: 23px;
+    height: 15px;
     background-color: #4caf50;
     text-align: center;
-
     font-weight: bold;
     line-height: 20px;
     transition: width 1s ease;
-    overflow: hidden; /* Oculta el desbordamiento */
-    border: 2px solid black;
+    overflow: hidden;
+
     border-radius: 50px;
 }
-
-p{
-    color: orange;
+#barra-train, #barra-sleep{
+    display: flex;
+    justify-content: end;
 }
+#fight,#eat,#train,#sleep{
+    display: flex;
+    flex-direction: column;
+}
+
+#eat{
+    background-color: #B8FBB6;
+    justify-content: start;
+
+}
+
+#t-eat{
+    color: #6DC26E;
+}
+
+#comida1{
+    background: url(./img/comida.png);
+    width: 27px;
+    height: 28px;
+    background-size: 80px 110px ;
+    background-position: -0px 3px;
+}
+#comida2{
+    background: url(./img/comida.png);
+    width: 26px;
+    height: 26px;
+    background-size:  88px 140px;
+    background-position: -60px -1px;
+
+}
+#comida3{
+    background: url(./img/comida.png);
+    width: 27px;
+    height: 27px;
+    background-size: 90px 160px ;
+    background-position: 0px 30px;
+}
+#eat-b1,#eat-b2,#eat-b3,#train-b1, #train-b2,#train-b3, #fight-b1,#fight-b2,#fight-b3,#sleep-b1,#sleep-b2,#sleep-b3{
+    border: 1px black solid; 
+    outline: none;
+    cursor: pointer; 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+   overflow: hidden;
+}
+
+#train{
+    background-color: #FFFD96;
+    justify-content: start;
+}
+
+#t-train{
+    color: #F6EA42;
+    position: relative;
+    left: 30vw;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+#container-train-botones{
+    flex-direction: row-reverse;
+}
+
+#train1{
+    background: url(./img/gravedad.png);
+    width: 27px;
+    height: 27px;
+    background-size: contain;
+
+}
+
+#train2{
+    background: url(./img/ki.png);
+    width: 27px;
+    height: 27px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+#train3{
+    background: url(./img/pesa.png);
+    width: 27px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+#fight{
+    background-color: #FE9798;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+#container-fight-botones{
+    margin-bottom: 20px;
+}
+
+#fight1{
+        background: url(./img/pelea1.png);
+        width:35px;
+        height: 29px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    margin-left: -10px;
+    }
+#fight2{
+    background: url(./img/vegeta.png);
+    width:35px;
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+margin-left:-6px;
+}
+
+#t-fight{
+    color: #B9333A;
+}
+#sleep{
+    background-color: #87CEEA;
+    justify-content: end;
+}
+#t-sleep{
+   color:#4F87BF;
+  position: relative;
+    left: 30vw;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+#sleep1{
+    background: url(./img/dormir.png);
+    width:35px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+margin-left:-6px;
+}
+
+#container-sleep-botones{
+    margin-bottom: 20px;
+}
+
+
+#personaje{
+    width: 100px;
+    height: 150px;
+    position: fixed;
+    top: 39%;
+    left: 42%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#sprite {
+    width: 200px; /* Ancho de cada cuadro del sprite */
+    height: 150px; /* Alto de cada cuadro del sprite */
+    transition: opacity 1s ease;
+    position: absolute;
+    top: 9px;
+    left: -46px;
+
+  }
+
+  #personaje img{
+    transition: opacity 0.5s ease;
+  }
+
+  #sprite2{
+    opacity: 0;
+    position: fixed;
+    top: 28%;
+    left: 33%;
+
+  }
+
+  #progressBar-goku{
+    position: fixed;
+    top:68%;
+    left: 30%;
+  }
+
+  #sprite-container {
+    position: relative;
+  }
+  
+  #sprite-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Inicialmente oculta */
+    transition: opacity 0.8s ease; /* Transición suave de opacidad */
+  }
+
+  #fillBar-goku-txt{
+    position: fixed;
+    top: 70%;
+    left: 30%;
+  }
+#container-imagen{
+    margin: 0px;
+    padding: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 193px;
+    height: 130px;
+
+}
+#progressBar-vida{
+    position: fixed;
+    left: 292px;
+    top: 425px;
+}
+#fillBar-cora{
+    background-color: red;
+}
+#vida-txt {
+    position: fixed;
+    top: 429px;
+    left: 292px;
+}
+   #ki{
+    position: absolute;
+    opacity: 0;
+    top: -20%;
+    left: -20%;
+   }
+
+   #pesa{
+    position: absolute;
+    left: -47px;
+    top: -69px;
+opacity: 0;
+   }
