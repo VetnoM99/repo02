@@ -1,0 +1,10 @@
+$table-primary: blue;
+$table-secondary: rgb(97, 97, 97);
+$table-success: green;
+$table-danger: red;
+$table-warning: rgb(255, 183, 0);
+$table-info: rgb(0, 170, 170);
+$table-light: rgb(147, 147, 147);
+$table-dark: black;
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../../node_modules/bootstrap/scss/variables"

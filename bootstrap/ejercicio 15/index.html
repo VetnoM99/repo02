@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .color1{
+            background-color: rgb(0, 74, 159);
+        }
+        .color2{
+            background-color: cyan;
+        }
+        .color3{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid text-center">
+        <div class="col p-2 h3 border border-dark border-4 mt-2 " style="background-color: yellowgreen;">header</div>
+        <div class="row mx-3 d-none d-md-flex">
+            <div class="col-5 col-sm col-md-3  offset-md-3 color1 border border-dark border-4 h2 p-4">a</div>
+            <div class="col-5 col-sm col-md-3 color1 ms-2 border border-dark border-4 h2 p-4" >b</div>
+            <div class="col-5 col-sm col-md-3 color1 border border-dark border-4 h2 p-4" >c</div>
+            <div class="col-5 col-sm col-md-3 offset-md-6  color1 border border-dark border-4 h2 p-4" >d </div>
+        </div>
+        <div class="row mx-3 d-md-none d-sm-flex">
+            <div class="col-5 col-sm col-md-3 m-2 color1 border border-dark border-4 h2 p-4">a</div>
+            <div class="col-5 col-sm col-md-3 m-2 color1 ms-2 border border-dark border-4 h2 p-4" >b</div>
+            <div class="col-5 col-sm col-md-3 m-2 color1 border border-dark border-4 h2 p-4" >c</div>
+            <div class="col-5 col-sm col-md-3 m-2 offset-md-6  color1 border border-dark border-4 h2 p-4" >d </div>
+        </div>
+        <div class="row order d-md-none">
+            <div class="col color2 m-3 border border-4 border-dark h2 p-2 d-none d-sm-block">tablet</div>
+        </div>
+        <div class="row mx-3">
+            <div class="col-5 col-sm  m-2 order-md-4  bg-secondary border border-dark border-4 h2 p-4">a</div>
+            <div class="col-5 col-sm  m-2 order-md-3 ms-2 bg-secondary border border-dark border-4 h2 p-4" >b</div>
+            <div class="col-5 col-sm  m-2 order-md-2  bg-secondary border border-dark border-4 h2 p-4" >c</div>
+            <div class="col-5 col-sm  m-2 order-md-1 ms-2 bg-secondary border border-dark border-4 h2 p-4" >d </div>
+        </div>
+        <div class="row d-sm-none">
+            <div class="col color2 m-3 border border-4 border-dark p-2 ">mobil</div>
+        </div>
+        <div class="row d-none d-md-flex">
+            <div class="col color2 m-3 border border-4 border-dark p-2 ">desktop</div>
+        </div>
+        <div class="row mx-1">
+            <div class="col color3 order-md-2 border border-4 border-dark p-5 m-1">:D</div>
+            <div class="col color3 order-md-1 border border-4 border-dark p-5 m-1 d-none d-sm-flex">:(</div>
+        </div>
+        <div class="row">
+            <div class="col p-3 h3 mx-3 border border-4 border-dark mt-3 d-none d-sm-inline" style="background-color: yellowgreen;">Footer</div>
+        </div>
+    </div>
+</body> 
+</html>
