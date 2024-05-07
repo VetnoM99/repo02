@@ -1,0 +1,49 @@
+#button-o-container{
+  width: 200px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+#boton-o{
+  background-color: transparent;
+}
+#gif-o{
+  background-image: url(./musi/giros.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+}
+
+#gif-i{
+  background-image: url(./musi/giros.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+}
+
+#gif-a{
+  background-image: url(./musi/giros.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+}
+
+.gif {
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.gif.visible {
+  opacity: 1;
+}
+
+.hidden{
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}

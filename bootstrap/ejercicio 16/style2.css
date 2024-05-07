@@ -1,0 +1,95 @@
+.sombra {
+	        animation: shadow-drop-bottom 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+  @keyframes shadow-drop-bottom {
+    0% {
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+              box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+    }
+  }
+  
+  #buscar{
+    width: 500px;
+
+  }
+
+  .logo{
+    width: 150px;
+  }
+
+  .login{
+    width: 130px;
+  }
+
+  .precio{
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-feature-settings: pnum;
+    font-variant-numeric: proportional-nums;
+    color: #38B2AC;
+  }
+
+  .texto{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: rgb(26, 32, 44);
+    font-size: 13px;
+    line-height: 1.5;
+    text-size-adjust: 100%;
+  }
+.cuadros{
+    background-color: #F7FAFC;
+}
+
+.imagen{
+    height: 140px;
+}
+.titulo-cuadro{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+.calificacion2{
+        background-color: transparent; 
+        border: none; 
+        cursor: pointer;
+    font-size: 13px;
+    width: 70px;
+}
+.estrella2{
+    font-size: 13px;
+    padding: 12px;
+}
+.contenedor-general{
+  position: fixed;
+  top: 17%;
+  justify-content: space-between;
+  display: flex;
+  width: 220px;
+}
+.corazon{
+  background-color: black;
+  opacity: 0.5;
+  width: 30px;
+height: 23px;
+}
+.contenedor-calificacion2{
+    background-color: black;
+    opacity: 0.5;
+    width: 70px;
+}
+
+
+.calificacion2:hover{
+    opacity: 0.7;
+    transition: opacity 0.5s ease;
+}
+
+.corazon:hover{
+  opacity: 0.7;
+  transition: opacity 0.5s ease;
+}
