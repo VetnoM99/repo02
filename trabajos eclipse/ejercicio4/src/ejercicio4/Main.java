@@ -1,0 +1,20 @@
+package ejercicio4;
+public class Main {
+
+	public static void main(String[] args) {
+
+				 byte num1= (byte) 128+5;
+				System.out.println(num1);
+				 short num2 = (short) (32767+25);
+				System.out.println(num2);
+				 int num3= 2147483647+10000;
+				System.out.println(num3);
+				long num4 = (long)(9223372036854775807l+20000);
+				System.out.println(num4);
+			
+			}
+
+	
+}
+
+
