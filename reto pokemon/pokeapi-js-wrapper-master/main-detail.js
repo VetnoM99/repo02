@@ -17,12 +17,18 @@ document.addEventListener('DOMContentLoaded', function () {
             // Construir el HTML para mostrar los detalles del Pokémon
             const pokemonHTML = `
                 <div class="pokemon-details">
+                <div class="container-details">
+                <div class="detail-t>
                     <img src="${pokemonData.sprites.front_default}" alt="${pokemonName}">
                     <h2>${pokemonName}</h2>
-                    <p>Altura: ${pokemonHeight / 10} m</p>
-                    <p>Peso: ${pokemonWeight / 10} kg</p>
-                    <p>Habilidades: ${pokemonAbilities}</p>
+                    </div
+                    <div class="texto-detail"
+                    <p class="altura">Altura: ${pokemonHeight / 10} m</p>
+                    <p class="peso">Peso: ${pokemonWeight / 10} kg</p>
+                    <p class="habilidades">Habilidades:\n${pokemonAbilities}</p>
                     <p>Tipo: ${pokemonTypes}</p>
+                    </div>
+                    </div>
                 </div>
             `;
 
@@ -40,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function displayPokemonVideo(pokemonId) {
         const videoHTML = `
             <video width="560" height="315" loop autoplay muted>
-                <source src="videos/${pokemonId}.mp4" type="video/mp4">
+                <source src="./img/${pokemonId}.mp4" type="video/mp4">
                 Tu navegador no soporta el elemento de video.
             </video>
         `;

@@ -130,6 +130,7 @@ button[type="submit"] {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         background-color: white;
         border: 1px solid #ddd;
         border-radius: 10px;
@@ -137,12 +138,21 @@ button[type="submit"] {
         padding: 2rem;
         text-align: center;
         width: 100vw;
-        gap:  20px;
+        gap:  30px;
+    }
+
+    .container-details{
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        width: 100vw;
     }
     
-    .pokemon-details img {
-        width: 150px;
-        height: 150px;
+    .details-t img {
+        width: 20%;
+        height: 20%;
     }
     
     .pokemon-details h2 {
@@ -150,5 +160,11 @@ button[type="submit"] {
     }
     
     .pokemon-details p {
+        flex-direction: column;
         margin: 0.5rem 0;
+    }
+
+    .altura,.peso,.habilidades{
+        display: block;
+
     }
