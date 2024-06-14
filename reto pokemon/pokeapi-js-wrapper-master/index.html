@@ -7,12 +7,23 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div id="loader">
+        <div class="loader-content">
+            <img src="../pokeapi-js-wrapper-master/img/loadermain.gif" alt="Cargando...">
+            <p>Cargando...</p>
+        </div>
+    </div>
+    <div id="page-content" style="display: none;">
+        <!-- Contenido de tu página aquí -->
     <header>
+            <!-- Contenido de tu página aquí -->
         <h1>PokeAPI</h1>
         <form id="search-form">
             <input type="text" id="search-input" placeholder="Buscar Pokémon...">
             <button type="submit">Buscar</button>
         </form>
+ 
+    
         <div id="categories-dropdown">
             <button id="categories-button">Categorías</button>
             <ul id="categories-list">
@@ -23,6 +34,7 @@
     <main id="pokemon-list">
         <!-- Aquí se cargarán dinámicamente las tarjetas de Pokémon -->
     </main>
+</div>
     <script src="./main.js"></script>
 </body>
 </html>

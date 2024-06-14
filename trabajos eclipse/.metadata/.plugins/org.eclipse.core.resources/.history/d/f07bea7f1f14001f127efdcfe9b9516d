@@ -1,0 +1,13 @@
+package ejercicio4;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		byte num1= (byte) 256;
+		System.out.println("aumentado en 5 posiciones");
+		System.out.println(num1);
+
+	}
+
+}

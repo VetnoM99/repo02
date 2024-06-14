@@ -6,7 +6,20 @@ body {
     padding: 0;
     background-color: #f3f3f3;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+.pokemon-details-body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
 
+#page-content {
+    
+    transition: opacity 0.5s ease-in-out; /* Transición de opacidad durante 0.5 segundos */
+}
 header {
     background-color: #333;
     color: white;
@@ -19,6 +32,138 @@ header {
 h1 {
     margin: 0;
 }
+/*detalle de los pokemons*/
+
+#pokemon-details {
+    display: grid;
+    margin-left: 150px;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    max-width: 1200px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    background-color: #ebe8e8;
+}
+
+.pokemon-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Agregar espacio entre las imágenes */
+    transition: gap 0.2s ease; /* Agregar transición para el cambio de espacio */
+}
+
+.pokemon-images img {
+    border-radius: 45%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        transition: opacity 0.2s ease-in-out; /* Transición de opacidad durante 0.3 segundos */
+    }
+    
+    /* Establecer la opacidad inicialmente en 1 */
+    .pokemon-images img:hover {
+        opacity: 0.6; /* Reducir la opacidad al pasar el ratón */
+    }
+.pokemon-info {
+    text-align: center;
+}
+
+.pokemon-description, .pokemon-stats, .pokemon-evolutions {
+    text-align: center;
+    display: inline-block;
+
+}
+.pokemon-description, .pokemon-stats, .pokemon-evolutions ul {
+    text-align: center;
+    
+    
+}
+.pokemon-evolutions p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pokemon-stats {
+    margin-bottom: 20px;
+}
+
+.pokemon-stats, .pokemon-evolutions {
+    width: 100%;
+}
+/*fin detalle pokemon*/
+/*overlay de las imagenes*/
+.overlay-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*fin overlay*/ 
+#loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 1;
+    transition: opacity 0.5s;
+    z-index: 9999;
+}
+
+.page-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#loader-content {
+    text-align: center;
+    color: white;
+}
+
+.loader-content img {
+    width: 300px; /* Ajusta el tamaño de la imagen */
+    height: 200px; /* Ajusta el tamaño de la imagen */
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    box-shadow: 0px 0px 60px 70px rgb(255, 255, 255); /* Aplica un box-shadow más grande */
+transition: opacity 0.5s ease-in-out; /* Transición de opacidad durante 0.5 segundos */
+
+}
+
+.loader-content p {
+    margin-top: 30px;
+    color: black; /* Asegura que el texto sea visible */
+    font-size: 20px;
+}
+
+
+/* Estilos para las tarjetas de Pokémon */
+.card {
+    border-radius: 10px; /* Hace que el borde del div sea redondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aplica un efecto de sombra */
+    overflow: hidden; /* Asegura que la imagen no se salga del div */
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
+}
+
+.card img {
+    width: 100%; /* Ajusta el ancho de la imagen para que se ajuste al div */
+    border-radius: 10px; /* Hace que el borde de la imagen también sea redondo */
+}
+
+
 
 #search-form {
     margin-top: 20px;
@@ -126,11 +271,12 @@ button[type="submit"] {
         transform: scale(1.1); /* Aumentar ligeramente el tamaño al pasar el ratón */
     }
 
+
     .pokemon-details {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        padding: 20px;
         background-color: white;
         border: 1px solid #ddd;
         border-radius: 10px;
@@ -140,31 +286,22 @@ button[type="submit"] {
         width: 100vw;
         gap:  30px;
     }
-
-    .container-details{
-        background-color: white;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        padding: 2rem;
-        width: 100vw;
+    
+    .pokemon-images img {
+        width: 200px;
+        height: 200px;
+        margin-right: 20px;
     }
     
-    .details-t img {
-        width: 20%;
-        height: 20%;
+    .pokemon-info {
+        flex-grow: 1;
     }
     
-    .pokemon-details h2 {
+    .pokemon-info h2 {
         margin-top: 0;
+        margin-bottom: 10px;
     }
     
-    .pokemon-details p {
-        flex-direction: column;
-        margin: 0.5rem 0;
-    }
-
-    .altura,.peso,.habilidades{
-        display: block;
-
+    .pokemon-info p {
+        margin: 5px 0;
     }

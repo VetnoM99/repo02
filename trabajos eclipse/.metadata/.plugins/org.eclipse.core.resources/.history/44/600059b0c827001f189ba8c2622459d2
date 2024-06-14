@@ -1,0 +1,7 @@
+spring.application.name=MyFirstApoRest
+#nombre del archivo
+logging.file.name=C:\Users\eric_\Desktop\log_sprint_boot.log
+#Loggin pattern for the file
+logging.pattern.file==%d{yyyy-MM-dd HH:mm:ss} - %msg%n
+#loggin pater for console
+logging.pattern.console=%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %mg%n

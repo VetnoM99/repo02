@@ -1,5 +1,25 @@
+
+
 document.addEventListener('DOMContentLoaded', function () {
+
+    document.getElementById('loader').style.display = 'flex';
+
+    // Simular un retraso de carga de 3 segundos
+    setTimeout(() => {
+        // Ocultar el loader
+        document.getElementById('loader').style.opacity = '0'; // Reducir la opacidad del loader
+
+        // Esperar un breve momento para que la transición de opacidad del loader se complete
+        setTimeout(() => {
+            document.getElementById('loader').style.display = 'none'; // Ocultar completamente el loader
+            document.getElementById('page-content').style.display = 'block'; // Mostrar el contenido de la página
+        }, 500); // Asegúrate de que este valor coincida con el tiempo de duración de la transición de opacidad en CSS
+    }, 4000);
+
+
     const pokemonListContainer = document.getElementById('pokemon-list');
+
+
 
     // Función para obtener un ID de Pokémon aleatorio
     function getRandomPokemonId() {
@@ -8,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Función para generar las tarjetas de Pokémon y los enlaces
     function generatePokemonCards() {
-        for (let i = 0; i < 15; i++) {
+        for (let i = 0; i < 20; i++) {
             const pokemonId = getRandomPokemonId();
             fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`)
                 .then(response => response.json())
@@ -30,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Generar las tarjetas de Pokémon al cargar la página
     generatePokemonCards();
-});
+
 
 
 const categoriesButton = document.getElementById('categories-button');
@@ -65,4 +85,4 @@ fetch('https://pokeapi.co/api/v2/type')
     .catch(error => {
         console.log('Error al obtener los tipos de Pokémon:', error);
     });
-
+});

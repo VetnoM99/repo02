@@ -1,0 +1,12 @@
+package ejercicio4;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		byte num1= 255;
+		System.out.print("aumantado en 5 posiciones", num1+5);
+
+	}
+
+}

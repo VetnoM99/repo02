@@ -1,0 +1,14 @@
+package ejercicio4;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		byte num1= (byte) 251;
+		System.out.println(num1);
+
+		 int tamañoEnBytes = Byte.BYTES;
+	        System.out.println("El tamaño de un short en bytes es: " + tamañoEnBytes);
+	}
+
+}

@@ -1,0 +1,2 @@
+spring.application.name=MyFirstApoRest
+logging.level.com.example==error

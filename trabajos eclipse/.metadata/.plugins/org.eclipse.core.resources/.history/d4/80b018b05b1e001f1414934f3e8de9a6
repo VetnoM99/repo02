@@ -1,0 +1,24 @@
+package Main;
+
+public class Main {
+
+	public static void main(String[] args) {
+	Banco b = new Banco();
+	b.setNumero(123409871);
+	b.setEntidadEmisora("MasterCard");
+	b.setTitular("David Bernal");
+	b.setFecha("25/29");
+	int pagoSimple = 20;
+	int pagoGrande = 2000;
+	int cuotas = 10;
+	
+	System.out.println("el titular de la tarjeta es "+ b.getTitular());
+	System.out.println("La entidad Emisora es "+b.getEntidadEmisora());
+	System.out.println("el numero de la tarjeta es "+ b.getNumero());
+	System.out.println("La Tarjeta vencera en "+ b.getFecha());
+	System.out.println("La tarjeta tiene "+b.getDinero()+"€");
+	System.out.println("despues del primer pago "+ b.pagar(pagoSimple));
+	
+	}
+
+}
